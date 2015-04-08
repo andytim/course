@@ -1,0 +1,25 @@
+<h2>Add course</h2>
+<%= form_for @course do|f|%>
+<div>
+	Name
+	<%= f.text_field :name %>
+</div>
+<div>
+	Teacher
+	<%= f.text_field :teacher %>
+</div>
+<div>
+	Time
+	<%= f.text_field :time %>
+</div>
+<div>
+	Local
+	<%= f.text_field :local %>
+</div>
+<div>
+	Cerdit
+              	<%= f.text_field :credit %>
+</div>
+
+<%= f.submit %>
+<% end %>
